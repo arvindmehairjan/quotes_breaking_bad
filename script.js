@@ -14,6 +14,9 @@ const renderData = async () => {
     const container = document.querySelector('.container');
     const data = await fetchData();
 
+    // Clear existing content in the container
+    container.innerHTML = '';
+
     if (!data) {
         return;
     }
@@ -34,4 +37,9 @@ const renderData = async () => {
     });
 };
 
+// Add event listener to the button, gets id of button 
+const newQuoteButton = document.getElementById('newQuoteButton');
+newQuoteButton.addEventListener('click', renderData);
+
+// Initial rendering of data
 renderData();

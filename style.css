@@ -5,9 +5,17 @@ body {
     margin: 0;
 }
 
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
 h1 {
     text-align: center;
-    margin: 10px;
+    margin: 10px 0;
     font-size: 2rem;
 }
 
@@ -16,7 +24,6 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
 }
 
 .card {
@@ -27,7 +34,7 @@ h1 {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     background-color: #3c975b;
-    margin-top: 20px; /* Add margin between h1 and cards */
+    margin-top: 10px;
 }
 
 .card h2 {
@@ -38,4 +45,17 @@ h1 {
 .card p {
     margin: 10px 0;
     font-style: italic;
+}
+
+#newQuoteButton {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #3c975b;
+    color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
 }
