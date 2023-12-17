@@ -58,4 +58,29 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#newQuoteButton:hover {
+    background-color: white;
+    color: #3c975b;
+}
+
+footer {
+    margin-top: -50px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.4s ease; /* Added transition for a smooth color change */
+}
+
+footer a:hover {
+    color: #5cdb87;
 }
